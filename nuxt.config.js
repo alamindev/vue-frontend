@@ -32,7 +32,8 @@ export default {
   ** Global CSS
   */
   css: [
-    "@mdi/font/css/materialdesignicons.css"
+    "@mdi/font/css/materialdesignicons.css",
+    {src: "~/assets/css/style.scss", lang: 'sass'}
   ],
   /*
   ** Plugins to load before mounting the App
