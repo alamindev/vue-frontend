@@ -64,6 +64,206 @@
                 </div>
             </div>
         </div>
+        <div class="filter__content_right">
+            <div class="content_left">
+                <ul>
+                    <li>
+                        <v-icon>edit_location</v-icon> Svážná 644/6, 140 00 Praha 4-Nusle, Czechia (50.059095, 14.443390 | ±20m)
+                    </li>
+                    <li>
+                        <v-icon>more</v-icon> Blocked container
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> Unchecked (20. Aug 2020 02:49)
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> 20. Aug 2020 02:49 (3 days ago)
+                    </li>
+                    <li>
+                        <v-icon>person_search</v-icon> John Demo
+                    </li>
+                    <li>
+                        <v-icon>directions_car</v-icon> Blocking car
+                    </li>
+                </ul>
+                <div class="button__area">
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>remove_red_eye </v-icon> See details
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>location_on </v-icon> Show map
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>mail_outline </v-icon> Send via Mail
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>chat_bubble_outline </v-icon> Comments
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>accessibility_new </v-icon> Street view
+                    </v-btn>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="mb-2 d-flex flex-no-wrap align-center">
+                    id: <span class="content__id ml-1">4444</span>
+
+                </div>
+                <div class="edit__icon">
+                    <v-icon>edit </v-icon>
+                </div>
+            </div>
+        </div>
+        <div class="filter__content_right">
+            <div class="content_left">
+                <ul>
+                    <li>
+                        <v-icon>edit_location</v-icon> Svážná 644/6, 140 00 Praha 4-Nusle, Czechia (50.059095, 14.443390 | ±20m)
+                    </li>
+                    <li>
+                        <v-icon>more</v-icon> Blocked container
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> Unchecked (20. Aug 2020 02:49)
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> 20. Aug 2020 02:49 (3 days ago)
+                    </li>
+                    <li>
+                        <v-icon>person_search</v-icon> John Demo
+                    </li>
+                    <li>
+                        <v-icon>directions_car</v-icon> Blocking car
+                    </li>
+                </ul>
+                <div class="button__area">
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>remove_red_eye </v-icon> See details
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>location_on </v-icon> Show map
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>mail_outline </v-icon> Send via Mail
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>chat_bubble_outline </v-icon> Comments
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>accessibility_new </v-icon> Street view
+                    </v-btn>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="mb-2 d-flex flex-no-wrap align-center">
+                    id: <span class="content__id ml-1">4444</span>
+
+                </div>
+                <div class="edit__icon">
+                    <v-icon>edit </v-icon>
+                </div>
+            </div>
+        </div>
+        <div class="filter__content_right">
+            <div class="content_left">
+                <ul>
+                    <li>
+                        <v-icon>edit_location</v-icon> Svážná 644/6, 140 00 Praha 4-Nusle, Czechia (50.059095, 14.443390 | ±20m)
+                    </li>
+                    <li>
+                        <v-icon>more</v-icon> Blocked container
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> Unchecked (20. Aug 2020 02:49)
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> 20. Aug 2020 02:49 (3 days ago)
+                    </li>
+                    <li>
+                        <v-icon>person_search</v-icon> John Demo
+                    </li>
+                    <li>
+                        <v-icon>directions_car</v-icon> Blocking car
+                    </li>
+                </ul>
+                <div class="button__area">
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>remove_red_eye </v-icon> See details
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>location_on </v-icon> Show map
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>mail_outline </v-icon> Send via Mail
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>chat_bubble_outline </v-icon> Comments
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>accessibility_new </v-icon> Street view
+                    </v-btn>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="mb-2 d-flex flex-no-wrap align-center">
+                    id: <span class="content__id ml-1">4444</span>
+
+                </div>
+                <div class="edit__icon">
+                    <v-icon>edit </v-icon>
+                </div>
+            </div>
+        </div>
+        <div class="filter__content_right">
+            <div class="content_left">
+                <ul>
+                    <li>
+                        <v-icon>edit_location</v-icon> Svážná 644/6, 140 00 Praha 4-Nusle, Czechia (50.059095, 14.443390 | ±20m)
+                    </li>
+                    <li>
+                        <v-icon>more</v-icon> Blocked container
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> Unchecked (20. Aug 2020 02:49)
+                    </li>
+                    <li>
+                        <v-icon>av_timer</v-icon> 20. Aug 2020 02:49 (3 days ago)
+                    </li>
+                    <li>
+                        <v-icon>person_search</v-icon> John Demo
+                    </li>
+                    <li>
+                        <v-icon>directions_car</v-icon> Blocking car
+                    </li>
+                </ul>
+                <div class="button__area">
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>remove_red_eye </v-icon> See details
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>location_on </v-icon> Show map
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>mail_outline </v-icon> Send via Mail
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>chat_bubble_outline </v-icon> Comments
+                    </v-btn>
+                    <v-btn class="mx-1 my-1 px-2   text-capitalize" outlined>
+                        <v-icon>accessibility_new </v-icon> Street view
+                    </v-btn>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="mb-2 d-flex flex-no-wrap align-center">
+                    id: <span class="content__id ml-1">4444</span>
+
+                </div>
+                <div class="edit__icon">
+                    <v-icon>edit </v-icon>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
