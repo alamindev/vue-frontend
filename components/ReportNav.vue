@@ -1,41 +1,41 @@
 <template>
 <div class="d-flex flex-column flex-md-row  align-center justify-md-space-between second__nav">
     <div class="nav__left_side d-flex align-center flex-wrap  justify-center">
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3" @click="filterShow">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3" @click="filterShow">
             <v-icon v-if="filter">
                 keyboard_arrow_up
             </v-icon>
             <v-icon v-if="!filter">
                 keyboard_arrow_down
             </v-icon>
-            Filter is active
+            Filter
         </v-btn>
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             From: 13. Aug 2020</v-btn>
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             To: 28. Aug 2020</v-btn>
         <p class="ma-0   text-capitalize d-block d-md-flex grey--text text--lighten-2">Item Count: 2</p>
     </div>
     <div class="nav__right_side d-flex align-center ml-md-auto flex-wrap justify-center">
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 mail_outline
             </v-icon>
             Send via email
         </v-btn>
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 print
             </v-icon>
             Print
         </v-btn>
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 picture_as_pdf
             </v-icon>
             PDF
         </v-btn>
-        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize" outlined color="grey lighten-3">
+        <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 picture_as_pdf
             </v-icon>
@@ -110,6 +110,17 @@ export default {
     methods: {
         filterShow() {
             this.filter = !this.filter
+        }
+    },
+    computed: {
+        size() {
+            const size = {
+                xs: 'x-small',
+                sm: 'small',
+            } [this.$vuetify.breakpoint.name];
+            return size ? {
+                [size]: true
+            } : {}
         }
     }
 }
