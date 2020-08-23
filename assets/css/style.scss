@@ -91,7 +91,7 @@ body{
     }
     .header_main {
         justify-content: space-between;
-    }
+    } 
 }
 
 @media only screen and (max-width: 600px) {
@@ -105,4 +105,40 @@ body{
     .second__nav .v-icon{
         font-size: 16px !important
     }
+    .map_image {
+        width: 100% !important;
+    }
+    .content_image {
+        width: 100% !important;
+    } 
+    .filter__content_left {
+        width: 100%;
+    }
+    .button__area {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px;
+    
+        button {
+            font-size: 12px;
+    
+            .v-icon {
+                font-size: 15px;
+                margin-right: 2px;
+            }
+        }
+    }
 }
+@media only screen and (max-width: 400px) { 
+    .content_image {
+        .v-image{
+            height: 150px !important
+        }
+    } 
+    .filter__content_left {
+        .v-image{
+            height: 150px !important
+        }
+    }
+}
+ 

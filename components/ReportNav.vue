@@ -138,7 +138,7 @@ export default {
 
 .filter__dropdown {
     position: absolute;
-    top: 52px;
+    top: 100%;
     width: 100%;
     background: #eee;
     z-index: 99;
