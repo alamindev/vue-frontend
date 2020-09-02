@@ -57,6 +57,34 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            iso: 'en-US',
+            name: 'English',
+            file: 'en-US.js'
+          } ,
+          {
+            code: 'fr',
+            iso: 'fr-FR',
+            name: 'Français',
+            file: 'fr-FR.js'
+          }
+        ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'lang/',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'lang',
+          alwaysRedirect: true,
+          fallbackLocale: 'en'
+        }
+      }
+    ] 
   ],
   /*
   ** vuetify module configuration

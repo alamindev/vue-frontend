@@ -1,0 +1,32 @@
+export default {
+  logo: 'logo',
+  menu: {
+    report: 'Rapports',
+    map: 'Carte',
+    gallery: 'Galerie',
+    statistic: 'Statistiques',
+    tutorial: 'Tutoriels',
+    setting: 'Paramètres',
+    log_out: 'Se déconnecter',
+  },
+  report_nav: {
+    filter: 'Filtre',
+    item_count: 'Item Count',
+    send_mail: 'Nombre d\'éléments',
+    print: 'Impression',
+    pdf: 'PDF',
+    csv: 'CSV',
+    reporter_name: 'Nom du journaliste',
+    description: 'La description',
+    report_id: 'Signaler Eid',
+    save_filter: 'Enregistrer le filtre',
+  },
+  report: {
+    id: 'id',
+    see_details: 'Ces détails', 
+    show_map: 'Afficher la carte', 
+    send_email: 'Nombre d\'éléments', 
+    comments: 'commentaires', 
+    street_view: 'Vue sur la rue', 
+  }, 
+}

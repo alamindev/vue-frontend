@@ -1,10 +1,12 @@
 <template>
 <header class="header_main d-flex px-3 align-center">
     <div class="brand__logo">
-        <div class="d-flex">
-            <v-icon color="white">home</v-icon>
-            <h3 style="color: white">Logo</h3>
-        </div>
+        <nuxt-link :to="localePath('/')" class="text-decoration-none">
+            <div class="d-flex">
+                <v-icon color="white">home</v-icon>
+                <h3 style="color: white">{{ $t('logo') }}</h3>
+            </div>
+        </nuxt-link>
     </div>
     <v-app-bar-nav-icon class="toolbar__icon white--text" @click="navShow"></v-app-bar-nav-icon>
     <transition name="slide">
@@ -12,23 +14,23 @@
             <div class="nav__bar_left ml-lg-2">
                 <ul class="nab__bar">
                     <li class="active">
+                        <nuxt-link :to="localePath('reports')">
+                            <v-icon color="white">format_list_bulleted</v-icon> {{ $t('menu.report') }}
+                        </nuxt-link>
+                    </li>
+                    <li>
                         <a href="#">
-                            <v-icon color="white">format_list_bulleted</v-icon> Reports
+                            <v-icon color="white">map</v-icon> {{ $t('menu.map') }}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <v-icon color="white">map</v-icon> Map
+                            <v-icon color="white">addchart</v-icon> {{ $t('menu.gallery') }}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <v-icon color="white">addchart</v-icon> Gallery
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <v-icon color="white">directions_off</v-icon> Statistics
+                            <v-icon color="white">directions_off</v-icon> {{ $t('menu.statistic') }}
                         </a>
                     </li>
                 </ul>
@@ -37,17 +39,17 @@
                 <ul class="nab__bar">
                     <li>
                         <a href="#">
-                            <v-icon color="white">info</v-icon> Tutorials
+                            <v-icon color="white">info</v-icon> {{ $t('menu.tutorial') }}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <v-icon color="white">settings</v-icon> Settings
+                            <v-icon color="white">settings</v-icon> {{ $t('menu.setting') }}
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <v-icon color="white">power_settings_new</v-icon> Log Out
+                            <v-icon color="white">power_settings_new</v-icon> {{ $t('menu.log_out') }}
                         </a>
                     </li>
                 </ul>
@@ -58,23 +60,23 @@
         <div class="nav__bar_left ml-lg-2">
             <ul class="nab__bar">
                 <li class="active">
+                    <nuxt-link :to="localePath('reports')">
+                        <v-icon color="white">format_list_bulleted</v-icon> {{ $t('menu.report') }}
+                    </nuxt-link>
+                </li>
+                <li>
                     <a href="#">
-                        <v-icon color="white">format_list_bulleted</v-icon> Reports
+                        <v-icon color="white">map</v-icon> {{ $t('menu.map') }}
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <v-icon color="white">map</v-icon> Map
+                        <v-icon color="white">addchart</v-icon> {{ $t('menu.gallery') }}
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <v-icon color="white">addchart</v-icon> Gallery
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <v-icon color="white">directions_off</v-icon> Statistics
+                        <v-icon color="white">directions_off</v-icon> {{ $t('menu.statistic') }}
                     </a>
                 </li>
             </ul>
@@ -82,18 +84,21 @@
         <div class="nav__bar_left">
             <ul class="nab__bar">
                 <li>
+                    <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
+                </li>
+                <li>
                     <a href="#">
-                        <v-icon color="white">info</v-icon> Tutorials
+                        <v-icon color="white">info</v-icon> {{ $t('menu.tutorial') }}
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <v-icon color="white">settings</v-icon> Settings
+                        <v-icon color="white">settings</v-icon> {{ $t('menu.setting') }}
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <v-icon color="white">power_settings_new</v-icon> Log Out
+                        <v-icon color="white">power_settings_new</v-icon> {{ $t('menu.log_out') }}
                     </a>
                 </li>
             </ul>
@@ -107,6 +112,11 @@ export default {
     data() {
         return {
             nav: false
+        }
+    },
+    computed: {
+        availableLocales() {
+            return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
         }
     },
     methods: {

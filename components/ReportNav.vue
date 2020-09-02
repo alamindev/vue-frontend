@@ -8,38 +8,38 @@
             <v-icon v-if="!filter">
                 keyboard_arrow_down
             </v-icon>
-            Filter
+            {{ $t('report_nav.filter') }}
         </v-btn>
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             From: 13. Aug 2020</v-btn>
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             To: 28. Aug 2020</v-btn>
-        <p class="ma-0   text-capitalize d-block d-md-flex grey--text text--lighten-2">Item Count: 2</p>
+        <p class="ma-0   text-capitalize d-block d-md-flex grey--text text--lighten-2"> {{ $t('item_count.filter') }}: 2</p>
     </div>
     <div class="nav__right_side d-flex align-center ml-md-auto flex-wrap justify-center">
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 mail_outline
             </v-icon>
-            Send via email
+            {{ $t('item_count.send_mail') }}
         </v-btn>
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 print
             </v-icon>
-            Print
+            {{ $t('item_count.print') }}
         </v-btn>
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 picture_as_pdf
             </v-icon>
-            PDF
+            {{ $t('item_count.pdf') }}
         </v-btn>
         <v-btn class="mx-1 my-2 px-2 font-weight-black   text-capitalize " v-bind="size" outlined color="grey lighten-3">
             <v-icon class="mr-1">
                 picture_as_pdf
             </v-icon>
-            CSV
+            {{ $t('item_count.csv') }}
         </v-btn>
     </div>
     <transition name="slide">
@@ -82,9 +82,9 @@
                     </ul>
 
                     <div class="input__group_main">
-                        <input type="text" class="input__filter" placeholder="Reporter name">
-                        <input type="text" class="input__filter" placeholder="Description">
-                        <input type="text" class="input__filter" placeholder="Report ID">
+                        <input type="text" class="input__filter" :placeholder="$t('item_count.reporter_name')">
+                        <input type="text" class="input__filter" :placeholder="$t('item_count.description')">
+                        <input type="text" class="input__filter" :placeholder="$t('item_count.report_id')">
                     </div>
                 </div>
 
@@ -92,7 +92,7 @@
             <div class="filter__footer d-flex justify-center py-1" @click="filterShow">
                 <v-icon>
                     keyboard_arrow_up
-                </v-icon> Save Filter
+                </v-icon> {{ $t('item_count.save_filter') }}
             </div>
         </div>
     </transition>

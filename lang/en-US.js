@@ -1,0 +1,32 @@
+export default {
+    logo: 'logo',
+    menu: {
+      report: 'Reports',
+      map: 'Map',
+      gallery: 'Gallery',
+      statistic: 'Statistics',
+      tutorial: 'Tutorials',
+      setting: 'Settings',
+      log_out: 'Log Out',
+    },
+    report_nav: {
+      filter: 'Filter',
+      item_count: 'Item Count',
+      send_mail: 'Send via email',
+      print: 'Print',
+      pdf: 'PDF',
+      csv: 'CSV',
+      reporter_name: 'Reporter name',
+      description: 'Description',
+      report_id: 'Report ID',
+      save_filter: 'Save Filter',
+    },
+    report: {
+      id: 'id',
+      see_details: 'See details', 
+      show_map: 'Show map', 
+      send_email: 'Send via Mail', 
+      comments: 'Comments', 
+      street_view: 'Street view', 
+    }, 
+  }
